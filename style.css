@@ -1,42 +1,177 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-  
-    background: transparent;
-  
-    font-family: inherit;
-    
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+  text-decoration: none;
 }
-  
-ol, ul, li {
-    list-style:none;
-    display:block;
+
+body {
+  background-color: #f7e4d4;
+  color: #467745;
 }
-  
-table {
-    border-collapse:collapse;
-    border-spacing:0
+
+body .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-  
-a img {
-    border: none
+
+body .cont form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-  
-button, a {
-    cursor: pointer;
-    color: inherit
+
+body .cont h1 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  color: #467745;
 }
-  
-textarea {
-    resize: none
+
+body .cont input,
+body .cont textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 15px 0;
+  padding-left: 20px;
+  background-color: white;
+  color: #467745;
 }
-  
-button, input, textarea, select {
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    border-radius: 0
+
+body .cont input {
+  height: 64px;
 }
+
+body .cont input[type='text']::-webkit-input-placeholder {
+  color: #467745;
+}
+
+body .cont input[type='text']:-ms-input-placeholder {
+  color: #467745;
+}
+
+body .cont input[type='text']::-ms-input-placeholder {
+  color: #467745;
+}
+
+body .cont input[type='text']::placeholder {
+  color: #467745;
+}
+
+body textarea {
+  height: 120px;
+  padding-top: 10px;
+}
+
+body textarea::-webkit-input-placeholder {
+  color: #467745;
+}
+
+body textarea:-ms-input-placeholder {
+  color: #467745;
+}
+
+body textarea::-ms-input-placeholder {
+  color: #467745;
+}
+
+body textarea::placeholder {
+  color: #467745;
+}
+
+body .checkCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 480px;
+}
+
+body .checkCont input[type='checkbox'] {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+body .checkCont label {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+}
+
+body .checkCont .underline {
+  text-decoration: underline;
+}
+
+body button {
+  width: 280px;
+  height: 80px;
+  margin-top: 20px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 21px;
+  letter-spacing: 0.2em;
+  background-color: #467745;
+  color: #f7e4d4;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 520px) {
+  form h1 {
+    font-size: 36px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  form h1,
+  form input,
+  form textarea,
+  form .checkCont {
+    width: calc(100% - 40px);
+    margin: 10px 20px;
+  }
+  form .checkCont {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+@media screen and (min-width: 521px) {
+  h1 {
+    font-size: 48px;
+  }
+  input,
+  textarea,
+  .checkCont {
+    width: 480px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
