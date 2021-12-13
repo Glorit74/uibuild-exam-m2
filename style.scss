@@ -49,6 +49,7 @@ body {
 
 			&[type='text']::placeholder {
 				color: #467745;
+				opacity: 0.75;
 			}
 		}
 	}
@@ -59,6 +60,7 @@ body {
 
 		&::placeholder {
 			color: #467745;
+			opacity: 0.75;
 		}
 	}
 

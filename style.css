@@ -64,18 +64,22 @@ body .cont input {
 
 body .cont input[type='text']::-webkit-input-placeholder {
   color: #467745;
+  opacity: 0.75;
 }
 
 body .cont input[type='text']:-ms-input-placeholder {
   color: #467745;
+  opacity: 0.75;
 }
 
 body .cont input[type='text']::-ms-input-placeholder {
   color: #467745;
+  opacity: 0.75;
 }
 
 body .cont input[type='text']::placeholder {
   color: #467745;
+  opacity: 0.75;
 }
 
 body textarea {
@@ -85,18 +89,22 @@ body textarea {
 
 body textarea::-webkit-input-placeholder {
   color: #467745;
+  opacity: 0.75;
 }
 
 body textarea:-ms-input-placeholder {
   color: #467745;
+  opacity: 0.75;
 }
 
 body textarea::-ms-input-placeholder {
   color: #467745;
+  opacity: 0.75;
 }
 
 body textarea::placeholder {
   color: #467745;
+  opacity: 0.75;
 }
 
 body .checkCont {
